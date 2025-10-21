@@ -8,8 +8,14 @@ const Navbar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    // Function to close mobile menu when any link is clicked
+    const handleMobileLinkClick = () => {
+        setIsMobileMenuOpen(false);
+        setIsDropdownOpen(false);
+    };
+
     return (
-        <nav className=" w-full">
+        <nav className="w-full">
             {/* Container */}
             <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-3 relative">
                 {/* Left: Logo */}
@@ -109,79 +115,90 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            {isMobileMenuOpen && (
-                <div className="md:hidden bg-white shadow-lg">
-                    <a
-                        href="#"
-                        className="block px-6 py-3 text-black font-bold"
-                    >
-                        Home
-                    </a>
+            <div
+                className={`md:hidden bg-white shadow-lg origin-top transition-transform duration-700 ease-in-out transform ${isMobileMenuOpen ? "scale-y-100" : "scale-y-0"}`}
+            >
+                <a
+                    href="#"
+                    className="block px-6 py-3 text-black font-bold"
+                    onClick={handleMobileLinkClick}
+                >
+                    Home
+                </a>
 
-                    {/* Mobile Dropdown */}
-                    <div>
-                        <button
-                            className="flex justify-between items-center w-full px-6 py-3 text-black font-bold"
-                            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                {/* Mobile Dropdown */}
+                <div>
+                    <button
+                        className="flex justify-between items-center w-full px-6 py-3 text-black font-bold"
+                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                    >
+                        Services
+                        <ChevronDown
+                            size={18}
+                            strokeWidth={3}
+                            className={`transition-transform duration-300 ${isDropdownOpen ? "rotate-180 text-[#8136AE]" : "rotate-0"
+                                }`}
+                        />
+                    </button>
+                    <div
+                        className={`overflow-hidden transition-all duration-300 ${isDropdownOpen ? "max-h-96" : "max-h-0"
+                            }`}
+                    >
+                        <a
+                            href="#"
+                            className="block pl-12 py-2 text-black font-poppins font-bold"
+                            onClick={handleMobileLinkClick}
                         >
-                            Services
-                            <ChevronDown
-                                size={18}
-                                strokeWidth={3}
-                                className={`transition-transform duration-300 ${isDropdownOpen ? "rotate-180 text-[#8136AE]" : "rotate-0"
-                                    }`}
-                            />
-                        </button>
-                        {isDropdownOpen && (
-                            <div>
-                                <a
-                                    href="#"
-                                    className="block pl-12 py-2 text-black font-poppins font-bold"
-                                >
-                                    Digital Marketing
-                                </a>
-                                <a
-                                    href="#"
-                                    className="block pl-12 py-2 text-black font-poppins font-bold"
-                                >
-                                    Branding & Graphics Design
-                                </a>
-                                <a
-                                    href="#"
-                                    className="block pl-12 py-2 text-black font-poppins font-bold"
-                                >
-                                    Video Editing & Animation
-                                </a>
-                                <a
-                                    href="#"
-                                    className="block pl-12 py-2 text-black font-poppins font-bold"
-                                >
-                                    Website & Tech
-                                </a>
-                            </div>
-                        )}
-                    </div>
-
-                    <a
-                        href="#"
-                        className="block px-6 py-3 text-black font-bold"
-                    >
-                        Our Work
-                    </a>
-                    <a
-                        href="#"
-                        className="block px-6 py-3 text-black font-bold"
-                    >
-                        Plans & Pricing
-                    </a>
-
-                    <div className="flex justify-center pt-3 pb-5">
-                        <button className=" relative text-[22px] inline-flex items-center justify-center gap-2 h-14 px-8 rounded-[48px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold">
-                            Get A Quote
-                        </button>
+                            Digital Marketing
+                        </a>
+                        <a
+                            href="#"
+                            className="block pl-12 py-2 text-black font-poppins font-bold"
+                            onClick={handleMobileLinkClick}
+                        >
+                            Branding & Graphics Design
+                        </a>
+                        <a
+                            href="#"
+                            className="block pl-12 py-2 text-black font-poppins font-bold"
+                            onClick={handleMobileLinkClick}
+                        >
+                            Video Editing & Animation
+                        </a>
+                        <a
+                            href="#"
+                            className="block pl-12 py-2 text-black font-poppins font-bold"
+                            onClick={handleMobileLinkClick}
+                        >
+                            Website & Tech
+                        </a>
                     </div>
                 </div>
-            )}
+
+                <a
+                    href="#"
+                    className="block px-6 py-3 text-black font-bold"
+                    onClick={handleMobileLinkClick}
+                >
+                    Our Work
+                </a>
+                <a
+                    href="#"
+                    className="block px-6 py-3 text-black font-bold"
+                    onClick={handleMobileLinkClick}
+                >
+                    Plans & Pricing
+                </a>
+
+                <div className="flex justify-center pt-3 pb-5">
+                    <button
+                        className="relative text-[22px] inline-flex items-center justify-center gap-2 h-14 px-8 rounded-[48px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold"
+                        onClick={handleMobileLinkClick}
+                    >
+                        Get A Quote
+                    </button>
+                </div>
+            </div>
         </nav>
     );
 };
