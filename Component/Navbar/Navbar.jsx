@@ -15,9 +15,9 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="w-full">
+        <nav className="w-full fixed top-0 left-0 z-50 h-20 md:h-auto bg-white/10 backdrop-blur-md">
             {/* Container */}
-            <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-3 relative">
+            <div className="flex justify-between items-center max-w-7xl mx-auto px-4 pb-3 relative ">
                 {/* Left: Logo */}
                 <div className="flex items-center gap-2">
                     <Image src="/assist/logo.webp" alt="Logo" width={170} height={170} />
@@ -116,7 +116,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden bg-white shadow-lg origin-top transition-transform duration-700 ease-in-out transform ${isMobileMenuOpen ? "scale-y-100" : "scale-y-0"}`}
+                className={`md:hidden bg-white shadow-lg origin-top transition-transform duration-700 ease-in-out transform -mt-3  ${isMobileMenuOpen ? "scale-y-100" : "scale-y-0"}`}
             >
                 <a
                     href="#"
