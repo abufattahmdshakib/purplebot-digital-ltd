@@ -3,6 +3,7 @@ import Navbar from "../../Component/Navbar/Navbar";
 import Footer from "../../Component/Footer/Footer";
 import BannerPage from "../../Component/Home/BannerPage";
 import Achievements from "../../Component/Home/Achievements";
+import OurWork from "../../Component/Home/OurWork";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
           <div className="flex-1">
             <BannerPage />
             <Achievements />
+            <OurWork />
           </div>
         
 

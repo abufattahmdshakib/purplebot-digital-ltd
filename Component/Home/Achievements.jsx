@@ -2,7 +2,7 @@ import React from 'react'
 
 function Achievements() {
     return (
-        <div className='block -mt-40 md:mt-5 max-w-7xl mx-auto'>
+        <div className='block -mt-40 md:mt-8 max-w-7xl mx-auto'>
             <div className='flex justify-between items-center px-10 md:px-16'>
                 <div className='block md:flex items-center gap-3 md:gap-5'>
                     <h1
@@ -48,7 +48,7 @@ function Achievements() {
                 </div>
             </div>
             <div>
-                <p className='font-poppins font-[500] text-black text-center text-[16px] md:text-[24px] my-8 md:my-16 px-2 md:px-8'>At Purplebot, we embrace and adapt to new tools, channels and technologies to offer <strong>effective design</strong> and contentsolutions to our clients. We are <strong>appreciated by brands and consumers alike</strong> for the creativity we bring to the table.Whatever the challenge, we drive forward with one goal in mind - <strong>growth for our clients and partners.</strong></p>
+                <p className='font-poppins font-[500] text-black text-center text-[16px] md:text-[18px] my-8 md:my-12 px-2 md:px-8'>At Purplebot, we embrace and adapt to new tools, channels and technologies to offer <strong>effective design</strong> and contentsolutions to our clients. We are <strong>appreciated by brands and consumers alike</strong> for the creativity we bring to the table.Whatever the challenge, we drive forward with one goal in mind - <strong>growth for our clients and partners.</strong></p>
             </div>
         </div>
     )
