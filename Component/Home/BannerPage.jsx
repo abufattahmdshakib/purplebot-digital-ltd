@@ -23,7 +23,7 @@ const BannerPage = () => {
     }, []);
 
     return (
-        <section className="min-h-screen md:bg-gradient-to-r from-[#d2dcf1] via-[#FFFFFF] to-[#F3DEEE]">
+        <section className="min-h-screen md:bg-gradient-to-r from-[#FFFFFF] via-[#FFFFFF] to-[#F3DEEE] ">
             <section className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-2 md:px-24 ">
                 {/* Left Side */}
                 <div className="flex-[0.2] md:flex-[0.9] text-center md:text-left space-y-2 md:space-y-4 ">
@@ -37,7 +37,7 @@ const BannerPage = () => {
                             WebkitTextFillColor: "transparent",
                         }}
                     >
-                        Digital. Design. Tech.
+                        Digital<span className="inline-block w-2 md:w-5 h-2 md:h-5 bg-gradient-to-b from-[#851B67] to-[#C81A7A] rounded-full"></span> Design<span className="inline-block w-2 md:w-5 h-2 md:h-5 bg-gradient-to-b from-[#851B67] to-[#C81A7A] rounded-full"></span> Tech<span className="inline-block w-2 md:w-5 h-2 md:h-5 bg-gradient-to-b from-[#851B67] to-[#C81A7A] rounded-full"></span>
                     </h1>
                     <p className="text-[#000] text-[16px] md:text-[32px] max-w-[350px] mx-auto md:mx-0 font-normal">
                         Expert solutions tailored to your brand
@@ -55,7 +55,7 @@ const BannerPage = () => {
                 </div>
 
                 {/* Right Side */}
-                <div className="flex-[1.2] md:flex-[1.3] flex justify-center md:justify-end mt-0 md:mt-0">
+                <div className="flex-[1.3] md:flex-[1.3] flex justify-center md:justify-end mt-4 md:mt-8">
                     <motion.div
                         animate={{ y: yValues }}
                         transition={{

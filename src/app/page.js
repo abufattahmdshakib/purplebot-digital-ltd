@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Component/Navbar/Navbar";
 import Footer from "../../Component/Footer/Footer";
 import BannerPage from "../../Component/Home/BannerPage";
+import Achievements from "../../Component/Home/Achievements";
 
 function Home() {
   return (
@@ -13,9 +14,9 @@ function Home() {
       <div className="pt-24 md:pt-18"> 
         {/* Your page content goes here */}
         <div className="min-h-[calc(100vh-95%)] flex flex-col justify-between">
-          {/* Example content placeholder */}
           <div className="flex-1">
-            <BannerPage></BannerPage>
+            <BannerPage />
+            <Achievements />
           </div>
         
 
