@@ -5,7 +5,7 @@ import Image from "next/image";
 function Footer() {
     return (
         <footer className="bg-black text-white pt-5 pb-18 font-poppins">
-            <div className="max-w-7xl mx-auto px-4 md:px-18 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                 {/* Section One: Logo + Company Info */}
                 <div className="flex-1 flex flex-col justify-center">
                     <div className="-mt-18">

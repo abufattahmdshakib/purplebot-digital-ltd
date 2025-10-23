@@ -2,25 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
-
-const images = [
-    "/assist/work (16).webp",
-    "/assist/work (15).webp",
-    "/assist/work (14).webp",
-    "/assist/work (13).webp",
-    "/assist/work (12).webp",
-    "/assist/work (11).webp",
-    "/assist/work (10).webp",
-    "/assist/work (9).webp",
-    "/assist/work.webp",
-    "/assist/work (2).webp",
-    "/assist/work (3).webp",
-    "/assist/work (5).webp",
-    "/assist/work (8).webp",
-    "/assist/work (6).webp",
-    "/assist/work (7).webp",
-    "/assist/work (4).webp",
-];
+import projects from "./projects ";
 
 // ✅ Function to generate full sequence with text first
 const generateSequence = (arr) => ["ourwork", ...arr];
@@ -63,16 +45,18 @@ function OurWork() {
         if (scrollWidth) {
             const timeout = setTimeout(() => {
                 startMarquee(0, 40);
-            }, 3000);
+            }, 5000);
             return () => clearTimeout(timeout);
         }
     }, [scrollWidth]);
 
-    const sequence = generateSequence(images);
-    const duplicateSequence = generateSequence(images);
+    // Generate sequences using projects array
+    const projectItems = projects.map((proj) => proj); // just to be clear
+    const sequence = generateSequence(projectItems);
+    const duplicateSequence = generateSequence(projectItems);
 
     return (
-        <div className="max-w-7xl mx-auto relative py-4 bg-[#fdfdfd]">
+        <div className=" relative py-4 bg-[#fdfdfd]">
             <div className="overflow-hidden relative max-w-full mx-auto">
                 <motion.div
                     ref={marqueeRef}
@@ -82,7 +66,7 @@ function OurWork() {
                     onHoverStart={() => {
                         hoverTimeout.current = setTimeout(() => {
                             controls.stop();
-                        }, 1500);
+                        }, 100);
                     }}
                     onHoverEnd={() => {
                         clearTimeout(hoverTimeout.current);
@@ -111,16 +95,19 @@ function OurWork() {
                             </div>
                         ) : (
                             <div
-                                key={`img-${idx}`}
+                                key={`proj-${idx}`}
                                 className="relative flex-shrink-0 w-32 md:w-72 group"
                             >
                                 <img
-                                    src={item}
-                                    alt={`work-${idx}`}
-                                    className="w-full h-52 md:h-[550px] object-cover rounded-xl md:rounded-4xl shadow-lg"
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="w-full h-52 md:h-[550px] object-cover rounded-xl md:rounded-2xl shadow-lg"
                                 />
-                                <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white p-4 rounded-b-xl">
-                                    <p>Project {idx + 1} Description</p>
+                                <div
+                                    className="font-poppins absolute bottom-0 left-0 w-full bg-gradient-to-r from-[#1F0618] to-[#851B67]/60 bg-opacity-40 md:bg-opacity-30  opacity-90 md:opacity-0 md:group-hover:opacity-80 transition-opacity text-white p-1 md:p-4 rounded-b-xl"
+                                >
+                                    <p className="font-extrabold text-[14px] md:text-[32px] opacity-100 leading-[1.1] mb-1 md:mb-4">{item.title}</p>
+                                    <p className="text-[10px] md:text-[22px] font-[600] opacity-100 leading-[1]">{item.description}</p>
                                 </div>
                             </div>
                         )
@@ -148,17 +135,14 @@ function OurWork() {
                             </div>
                         ) : (
                             <div
-                                key={`dup-img-${idx}`}
+                                key={`dup-proj-${idx}`}
                                 className="relative flex-shrink-0 w-32 md:w-72 group"
                             >
                                 <img
-                                    src={item}
-                                    alt={`work-dup-${idx}`}
-                                    className="w-full h-52 md:h-[550px] object-cover rounded-4xl shadow-lg"
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="w-full h-52 md:h-[550px] object-cover rounded-xl md:rounded-2xl shadow-lg"
                                 />
-                                <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white p-4 rounded-b-xl">
-                                    <p>Project {idx + 1} Description</p>
-                                </div>
                             </div>
                         )
                     )}
