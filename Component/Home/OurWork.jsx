@@ -106,8 +106,8 @@ function OurWork() {
                                 <div
                                     className="font-poppins absolute bottom-0 left-0 w-full bg-gradient-to-r from-[#1F0618] to-[#851B67]/60 bg-opacity-40 md:bg-opacity-30  opacity-90 md:opacity-0 md:group-hover:opacity-80 transition-opacity text-white p-1 md:p-4 rounded-b-xl"
                                 >
-                                    <p className="font-extrabold text-[14px] md:text-[32px] opacity-100 leading-[1.1] mb-1 md:mb-4">{item.title}</p>
-                                    <p className="text-[10px] md:text-[22px] font-[600] opacity-100 leading-[1]">{item.description}</p>
+                                    <p className="font-extrabold text-[15px] md:text-[32px] opacity-100 leading-[1.1] mb-1 md:mb-4">{item.title}</p>
+                                    <p className="text-[12px] md:text-[22px] font-[600] opacity-100 leading-[1]">{item.description}</p>
                                 </div>
                             </div>
                         )

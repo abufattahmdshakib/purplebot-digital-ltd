@@ -16,7 +16,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="w-full fixed top-0 left-0 z-50 h-20 md:h-auto bg-white/10 backdrop-blur-md">
+        <nav className="w-full fixed top-0 left-0 z-50 h-20 md:h-20 bg-white/10 backdrop-blur-md">
             {/* Container */}
             <div className="flex justify-between items-center max-w-7xl mx-auto px-4 pb-3 relative">
                 {/* Left: Logo (Clickable → Home) */}
