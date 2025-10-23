@@ -1,6 +1,9 @@
+"use client";
+
 import { ArrowRight } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
+
 
 // ✅ Define your data as a constant
 const chooseData = [
@@ -25,6 +28,8 @@ const chooseData = [
 ]
 
 function WhyChoose() {
+    const [activeIndex, setActiveIndex] = useState(null);
+
     return (
         <section className='bg-gradient-to-t from-[#851B67] to-[#C81A7A] py-10 md:py-20 mb-10'>
             {/* section one */}
@@ -73,30 +78,51 @@ function WhyChoose() {
             </section>
 
             {/* section two */}
-            <section className="grid grid-cols-1 md:grid-cols-3 gap-8 px-3 md:px-8">
+            <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-0 px-3 md:px-8">
                 {chooseData.map((item, index) => (
                     <div
                         key={item.id}
-                        className={`group flex flex-col items-center text-center  transition-all duration-500 ease-in-out transform
-        hover:scale-[1.00] hover:pb-6 ]
-        ${index === 1 ? "border-t border-b md:border-t-0 md:border-b-0 md:border-l md:border-r border-gray-400 py-8 md:py-0 px-0 md:px-8" : ""}`}
+                        onClick={() => setActiveIndex(index === activeIndex ? null : index)}
+                        className={`
+    group flex flex-col items-center text-center transition-all duration-500 ease-in-out transform
+    ${index === 1 ? "border-t border-b md:border-t-0 md:border-b-0 md:border-l md:border-r border-gray-400 py-8 md:py-0 px-0 md:px-8" : ""}
+    ${activeIndex === index ? "scale-100 pb-8 translate-y-3" : ""}
+    md:hover:scale-[1.00] md:hover:pb-6
+  `}
                     >
                         {/* Image + Title */}
-                        <div className="flex w-full justify-start items-center gap-3 transition-all duration-500 ease-in-out group-hover:translate-x-2">
+                        <div className={`
+    flex w-full justify-start items-center gap-1 transition-all duration-500 ease-in-out
+    ${activeIndex === index ? "translate-x-4" : ""}
+    md:group-hover:translate-x-2
+  `}>
                             <Image
                                 src={item.image}
                                 alt={item.title}
                                 width={100}
                                 height={100}
-                                className="self-start w-16 md:w-24 transition-transform duration-500 ease-in-out group-hover:scale-110"
+                                className={`
+    self-start w-12 md:w-20 transition-transform duration-500 ease-in-out
+    ${activeIndex === index ? "scale-160 w-24 translate-x-4 translate-y-3 pb-4 " : "scale-80 w-10 -translate-x-2 -translate-y-3 -pr-4"}
+    md:group-hover:scale-110
+  `}
                             />
-                            <h2 className="text-[28px] font-[800] mb-2 bg-gradient-to-l from-[#F3DEEE] via-[#FBD9D7] to-[#B6C9F1] bg-clip-text text-transparent self-end transition-all duration-500 ease-in-out group-hover:translate-x-2 group-hover:translate-y-2">
+                            <h2 className={`
+      text-[28px] font-[800] mb-2 bg-gradient-to-l from-[#F3DEEE] via-[#FBD9D7] to-[#B6C9F1] bg-clip-text text-transparent self-end
+      transition-all duration-500 ease-in-out
+      ${activeIndex === index ? "translate-x-10 translate-y-10" : "-translate-x-4 -translate-y-2 pl-2"}
+      md:group-hover:translate-x-2 md:group-hover:translate-y-3
+    `}>
                                 {item.title}
                             </h2>
                         </div>
 
                         {/* Description */}
-                        <p className="text-[#FFFFFF] text-left font-[400] mt-4 md:mt-4 transition-all duration-500 ease-in-out group-hover:translate-y-3">
+                        <p className={`
+    text-[#FFFFFF] text-left font-[400] mt-4 md:mt-4 transition-all duration-500 ease-in-out
+    ${activeIndex === index ? "-translate-x-2 translate-y-6 pl-2 pb-2" : "-translate-y-4"}
+    md:group-hover:translate-y-3
+  `}>
                             {item.description}
                         </p>
                     </div>
