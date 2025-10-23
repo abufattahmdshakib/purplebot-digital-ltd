@@ -59,7 +59,7 @@ const Navbar = () => {
 
                         {/* Dropdown Menu */}
                         {isDropdownOpen && (
-                            <div className="absolute left-0 top-full bg-gray-50 rounded-lg py-2 w-64 z-10 shadow-lg">
+                            <div className="absolute left-0 top-full bg-gray-50 rounded-lg py-2 w-72 z-10 shadow-lg">
                                 <Link
                                     href="/services/digital-marketing"
                                     className="block px-4 py-2 text-black font-poppins md:text-[18px] font-semibold hover:bg-gray-100 hover:text-[#8136AE] transition"

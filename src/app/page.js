@@ -3,10 +3,11 @@ import BannerPage from "../../Component/Home/BannerPage";
 import Achievements from "../../Component/Home/Achievements";
 import OurWork from "../../Component/Home/OurWork";
 import ExploreOurWork from "../../Component/Home/ExploreOurWork";
+import WhyChoose from "../../Component/Home/WhyChoose";
 
 function Home() {
   return (
-    <div className="font-poppins container mx-auto">
+    <div className=" container mx-auto">
 
       {/* Main Content */}
       <div className="pt-24 md:pt-18">
@@ -17,6 +18,7 @@ function Home() {
             <Achievements />
             <OurWork />
             <ExploreOurWork />
+            <WhyChoose />
           </div>
 
         </div>

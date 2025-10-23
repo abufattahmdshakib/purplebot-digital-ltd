@@ -44,7 +44,7 @@ function ExploreOurWork() {
                     </span>
                 </button>
 
-                <p className="font-poppins text-black text-[22px] md:text-[25px] font-[600] md:font-[800] leading-[150%]">
+                <p className="font-poppins text-black text-[22px] md:text-[25px] font-[600] md:font-[800] leading-[150%] mt-6">
                     Trusted by renowned multi-nationals, startups, and SMEs
                 </p>
             </div>
