@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 
 
-// ✅ Define your data as a constant
+//  Define your data as a constant
 const chooseData = [
     {
         id: 1,
@@ -31,7 +31,7 @@ function WhyChoose() {
     const [activeIndex, setActiveIndex] = useState(null);
 
     return (
-        <section className='bg-gradient-to-t from-[#851B67] to-[#C81A7A] py-10 md:py-20 mb-10'>
+        <section className='bg-gradient-to-t from-[#851B67] to-[#C81A7A] py-10 md:py-20'>
             {/* section one */}
             <section className="flex flex-col md:flex-row items-center mb-5">
                 {/* Left Content */}

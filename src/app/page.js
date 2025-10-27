@@ -4,6 +4,7 @@ import Achievements from "../../Component/Home/Achievements";
 import OurWork from "../../Component/Home/OurWork";
 import ExploreOurWork from "../../Component/Home/ExploreOurWork";
 import WhyChoose from "../../Component/Home/WhyChoose";
+import WeOffer from "../../Component/Home/WeOffer";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
             <OurWork />
             <ExploreOurWork />
             <WhyChoose />
+            <WeOffer />
           </div>
 
         </div>
