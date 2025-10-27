@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const weOfferData = [
@@ -34,12 +34,46 @@ const weOfferData = [
   },
 ];
 
-function WeOffer() {
+function WeOffer() {  // ✅ function name fixed
+  const [bgStyle, setBgStyle] = useState({
+    backgroundImage: "none",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "125% 100%",
+    backgroundPosition: "-70px 0",
+  });
+
+  useEffect(() => {
+    const updateBgStyle = () => {
+      if (window.innerWidth >= 768) {
+        setBgStyle({
+          backgroundImage: "url('/assist/BannerBg.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "110% 100%",
+          backgroundPosition: "-70px 0",
+        });
+      } else {
+        setBgStyle({
+          backgroundImage: "url('/assist/BannerBg.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "110% 100%",
+          backgroundPosition: "-10px 0",
+        });
+      }
+    };
+
+    updateBgStyle();
+    window.addEventListener("resize", updateBgStyle);
+    return () => window.removeEventListener("resize", updateBgStyle);
+  }, []);
+
   return (
-    <section className="py-12 md:py-2 px-2 md:px-10 bg-gradient-to-l from-[#F3DEEE] via-[#FFFFFF] to-[#B6C9F1]">
+    <section className="py-12 md:py-2 px-2 md:px-10"
+      style={bgStyle}
+    >
+
       {/* Section Title */}
       <div className="text-center mb-5 md:mb-12">
-        <h1 className="text-3xl md:text-5xl font-bold text-[#C81A7A] mt-0 md:mt-18 mb-8">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#C81A7A] mt-0 md:mt-18 mb-2 md:mb-8">
           Services We Offer
         </h1>
         <p className="text-[#000000] text-[14px] md:text-[28px] font-[400] max-w-[1450px] mx-auto px-2">
