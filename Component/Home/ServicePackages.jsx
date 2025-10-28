@@ -67,10 +67,18 @@ function ServicePackages() {
     return (
 
         <section style={bgStyle} className="px-1">
-            <div className="max-w-7xl mt-5 md:mt-20 mx-auto">
-                <h2 className="w-92 md:w-2xl px-2 mx-auto text-center text-[#000] text-[16px] md:text-[24px] font-[400]">Discover the full potential of what we can offer. From digital marketing to tech solutions, <span className="text-[#C91A7B]">Purplebot is your partner for success.</span></h2>
-                <h1 className="w-[370px] md:w-full mx-auto px-2 mt-4 md:leading-14 leading-10 text-[#C91A7B] text-[25px] md:text-[48px] font-[700] text-center">Service Packages for <br />
-                    <spen className="text-[#000]">Social Media Management</spen> </h1>
+            <div className="mt-5 md:mt-20 px-2">
+                {/* Subtitle */}
+                <h2 className="w-full max-w-[360px] md:max-w-2xl mx-auto text-center text-[#000] text-[16px] md:text-[24px] font-[400]">
+                    Discover the full potential of what we can offer. From digital marketing to tech solutions,{" "}
+                    <span className="text-[#C91A7B]">Purplebot is your partner for success.</span>
+                </h2>
+
+                {/* Main Title */}
+                <h1 className="w-full max-w-[360px] md:max-w-full mx-auto mt-4 md:mt-6 leading-8 md:leading-[56px] text-[#C91A7B] text-[24px] md:text-[48px] font-[700] text-center">
+                    Service Packages for <br />
+                    <span className="text-[#000]">Social Media Management</span>
+                </h1>
             </div>
             <section className="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl mt-16 p-2 md:p-10 md:flex justify-between gap-8">
                 {/* Left Column (Feature List) */}
@@ -108,7 +116,7 @@ function ServicePackages() {
                         <label
                             key={plan.name}
                             onClick={() => setSelectedPlan(plan.name)}
-                            className={`flex items-center justify-between px-6 py-5 rounded-xl cursor-pointer transition-all border ${selectedPlan === plan.name
+                            className={`flex items-center justify-between px-2 md:px-6 py-5 rounded-xl cursor-pointer transition-all border ${selectedPlan === plan.name
                                 ? "bg-[#8136AE] text-white border-transparent"
                                 : "bg-white border-gray-300 text-[#000000] hover:border-[#8136AE]"
                                 }`}
@@ -136,25 +144,27 @@ function ServicePackages() {
                 </div>
             </section>
             <div
-                className="flex items-center gap-4 p-4 md:p-6 rounded-xl shadow-sm hover:shadow-md transition-all bg-cover bg-no-repeat bg-center"
+                className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 p-4 md:p-2 mt-10 md:mt-20  rounded-3xl shadow-sm hover:shadow-md transition-all bg-cover bg-no-repeat bg-center"
                 style={{
-                    backgroundImage: "url('/assist/quoteBg..png')",
+                    backgroundImage: "url('/assist/quoteBg.png')",
                 }}
             >
-                <div className="w-16 h-16 flex-shrink-0">
+                {/* Image Section */}
+                <div className="w-full md:w-1/2">
                     <img
-                        src="/assist/Custom.svg"
+                        src="/assist/Custom.webp"
                         alt="Feature"
-                        className="w-full h-full object-cover rounded-lg"
+                        className="w-full h-auto md:h-[390px] object-cover rounded-lg"
                     />
                 </div>
 
-                <div>
-                    <h1 className="text-lg md:text-xl font-semibold text-gray-800">
+                {/* Text Section */}
+                <div className="w-full md:w-1/2 text-center md:text-left mt-6 md:mt-0">
+                    <h1 className="lg:leading-10 text-white text-[28px] md:text-[40px] font-bold">
                         Custom Prices.<br />Tailored Solutions.
                     </h1>
-                    <p className="text-sm text-gray-600 mb-3">
-                        Short description about the plan or feature goes here.
+                    <p className="text-[17px] md:text-[20px] font-[500] text-white md:w-[80%] mx-auto md:mx-0 mt-4 mb-3">
+                        Feel free to let us know more about your requirements. We will reach out to you with a response.
                     </p>
                     <button className="relative text-[18px] text-center md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
                         <span className="flex items-center gap-2 transform transition-transform duration-700 translate-x-4 group-hover:-translate-x-3">

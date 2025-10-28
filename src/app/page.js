@@ -5,8 +5,8 @@ import OurWork from "../../Component/Home/OurWork";
 import ExploreOurWork from "../../Component/Home/ExploreOurWork";
 import WhyChoose from "../../Component/Home/WhyChoose";
 import WeOffer from "../../Component/Home/WeOffer";
-import CustomPrices from "../../Component/Home/CustomPrices";
 import ServicePackages from "../../Component/Home/ServicePackages";
+import LetsTalk from "../../Component/Home/LetsTalk";
 
 function Home() {
   return (
@@ -24,7 +24,7 @@ function Home() {
             <WhyChoose />
             <WeOffer />
             <ServicePackages />
-            <CustomPrices />
+            <LetsTalk /> 
           </div>
 
         </div>
