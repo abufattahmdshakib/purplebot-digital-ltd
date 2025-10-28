@@ -66,7 +66,7 @@ function ServicePackages() {
 
     return (
 
-        <section style={bgStyle} className="px-1">
+        <section style={bgStyle} className="px-1 pb-16">
             <div className="mt-5 md:mt-20 px-2">
                 {/* Subtitle */}
                 <h2 className="w-full max-w-[360px] md:max-w-2xl mx-auto text-center text-[#000] text-[16px] md:text-[24px] font-[400]">
@@ -154,7 +154,7 @@ function ServicePackages() {
                     <img
                         src="/assist/Custom.webp"
                         alt="Feature"
-                        className="w-full h-auto md:h-[390px] object-cover rounded-lg"
+                        className="w-full h-auto md:h-[390px] object-cover -mb-2 rounded-lg"
                     />
                 </div>
 
