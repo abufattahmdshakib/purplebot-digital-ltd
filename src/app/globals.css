@@ -1,21 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
-
-/* google fonts */
-
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-
-body { 
-   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+body {
+  font-family: "Poppins", sans-serif;
   background: var(--background);
   color: var(--foreground);
-  
+}
+
+/* Shape wrapper background overlay */
+.shape-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+}
+
+/* ✅ Full shape div behind content */
+.shape {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #e9ddf1, #fff, #fff);
+  clip-path: polygon(0 0, 100% 9%, 100% 93%, 0 100%);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  z-index: -1;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+/* Hover: rotate the full shape */
+.shape-wrapper:hover .shape {
+  transform: rotate(2deg);
+}
+
+/* Responsive fix: mobile */
+@media (max-width: 768px) {
+  .shape {
+    clip-path: none;
+    transform: none !important;
+  }
+}
+
+/* Scale animation for right-side image */
+@keyframes scaleLoop {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.25);
+  }
+
+  30% {
+    transform: scale(1.25);
+  }
+
+  60% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-scaleLoop {
+  animation: scaleLoop 8s ease-in-out infinite;
+  transform-origin: center;
 }

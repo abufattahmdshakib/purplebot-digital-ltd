@@ -10,7 +10,7 @@ import LetsTalk from "../../Component/Home/LetsTalk";
 
 function Home() {
   return (
-    <div className=" container mx-auto">
+    <div className="container mx-auto">
 
       {/* Main Content */}
       <div className="pt-24 md:pt-18">
