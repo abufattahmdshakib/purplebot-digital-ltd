@@ -95,7 +95,7 @@ const Navbar = () => {
                         Our Work
                     </Link>
                     <Link
-                        href="/pricing"
+                        href="/plansPricing"
                         className="text-black font-poppins md:text-[18px] font-semibold py-1 px-4 rounded-[6px] hover:bg-gray-100 hover:text-[#8136AE] transition-colors"
                     >
                         Plans & Pricing
@@ -194,7 +194,7 @@ const Navbar = () => {
                     Our Work
                 </Link>
                 <Link
-                    href="/pricing"
+                    href="/plansPricing"
                     className="block px-6 py-3 text-black font-bold"
                     onClick={handleMobileLinkClick}
                 >

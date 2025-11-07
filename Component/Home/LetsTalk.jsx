@@ -6,7 +6,7 @@ import { IoMailUnreadOutline } from "react-icons/io5";
 
 function LetsTalk() {
   return (
-    <section className="max-w-6xl mx-auto px-2 md:px-0 flex flex-col md:flex-row items-center justify-between gap-6 bg-white my-12">
+    <section className="max-w-6xl mx-auto px-2 md:px-0 flex flex-col md:flex-row items-center justify-between gap-6 bg-white mb-8">
 
       {/* Left: Contact Info */}
       <div className="flex-1 text-left">

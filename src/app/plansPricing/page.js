@@ -1,22 +1,20 @@
 import React from 'react'
-import AboutBanner from '../../../Component/About/AboutBanner'
+import PlansPricingBannar from '../../../Component/PlansPricing/PlansPricingBannar.jsx'
 import LetsTalk from '../../../Component/Home/LetsTalk'
 
-function About() {
+function PlansPricing() {
     return (
-
         <div className="container mx-auto">
             <div className='pt-24 md:pt-18'>
                 <div className="flex flex-col justify-between">
                     <div className='flex-1'>
-                        <AboutBanner />
+                        <PlansPricingBannar />
                         <LetsTalk /> 
                     </div>
                 </div>
             </div>
         </div>
-
     )
 }
 
-export default About
+export default PlansPricing

@@ -40,7 +40,7 @@ const AboutBanner = () => {
 
                     {/* Partner Logo */}
                     <div className="flex justify-center md:justify-start items-center gap-4 flex-wrap">
-                        <div className="relative w-[200px] md:w-[160px] h-[60px]">
+                        <div className="relative left-0 md:-left-15 w-[250px] md:w-[360px] h-[70px]">
                             <Image
                                 src="/assist/digital-first-award.webp"
                                 alt="Bangladesh Brand Forum"
