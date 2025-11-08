@@ -1,12 +1,15 @@
 "use client";
 import React from "react";
-import { Layers } from "lucide-react";
+import Image from "next/image";
+import { MdDone } from "react-icons/md";
+import { HiBadgeCheck } from "react-icons/hi";
 
 const plans = [
   {
-    name: "Basic",
+    name: "Lite",
     price: "$750",
     per: "/month",
+    image: "/assist/stack1.webp",
     contents: {
       "Content Revision": "Upto 2",
       "Account Manager": "Shared",
@@ -16,16 +19,17 @@ const plans = [
       "Image Based Content": "8",
       "Scheduling and Posting": "🌸",
       "Total Content Count": "10",
-      "Monthly Content Plan": "🌸",
+      "Monthly Content Plan": "gray-icon",
       "Story Publication": "In 2 Day Intervals",
       "Copywriting": "🌸",
       "Standing Meetings": "Monthly",
     },
   },
   {
-    name: "Business",
+    name: "Essential",
     price: "$1000",
     per: "/month",
+    image: "/assist/stack2.webp",
     contents: {
       "Content Revision": "Upto 3",
       "Account Manager": "Shared",
@@ -42,9 +46,10 @@ const plans = [
     },
   },
   {
-    name: "Enterprise",
+    name: "Advanced",
     price: "$1250",
     per: "/month",
+    image: "/assist/stack3.webp",
     contents: {
       "Content Revision": "Upto 4",
       "Account Manager": "Shared",
@@ -78,90 +83,97 @@ const features = [
 ];
 
 export default function PlansPricingBanner() {
-  const rowHeight = "h-14";    // feature/content rows
-  const headerHeight = "h-36"; // plan header section
+  const rowHeight = "h-18"; // row height
+  const headerHeight = "h-40"; // header height
 
   return (
-    <section className="bg-white py-20 px-4">
-      <div className="max-w-6xl mx-auto overflow-hidden">
-        <div className="grid grid-cols-4 gap-4">
-          {/* Feature Column */}
-          <div className="flex flex-col bg-white border-gray-200">
-            {/* Spacer to match plan header height */}
-            <div className={`${headerHeight}`}></div>
+    <section className="bg-gradient-to-l from-[#ECB9D6] via-[#FFF] to-[#CCAFDD]">
+      <div className="leading-18 sm:leading-20 py-10 sm:py-16">
+        <h1 className="text-center text-[38px] sm:text-[64px] font-[700] sm:font-[800] px-1 text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67]">
+          Fixed Packages
+        </h1>
+        <h2 className="text-center leading-9 sm:leading-20 text-[28px] sm:text-[64px] font-[500] px-1 text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67]">
+          for Social Media Management
+        </h2>
+      </div>
 
-            {/* Feature Rows */}
-            <div className="flex flex-col">
-              {features.map((feature, i) => (
+      <section className="p-2 sm:p-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Card Wrapper */}
+          <div className="bg-white rounded-3xl shadow-xl overflow-x-auto p-4 sm:p-12">
+            <div className="grid grid-cols-4 gap-2 sm:gap-4">
+              {/* Feature Column */}
+              <div className="flex flex-col border-gray-300">
+                <div className={`${headerHeight}`}></div>
+                <div className="flex flex-col">
+                  {features.map((feature, i) => (
+                    <div
+                      key={i}
+                      className={`text-center text-xs sm:text-[20px] font-[400] text-black flex justify-center items-center px-1 ${rowHeight} ${i === 0 ? "" : "border-t border-gray-200"}`}
+                    >
+                      {feature}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Plan Columns */}
+              {plans.map((plan, i) => (
                 <div
                   key={i}
-                  className={`text-left font-medium text-gray-800 flex items-center px-4 ${rowHeight} ${
-                    i === 0 ? "" : "border-t border-gray-200"
-                  }`}
+                  className="flex flex-col hover:border-2 hover:rounded-3xl hover:border-[#b17af0] transition-all duration-300"
                 >
-                  {feature}
+                  {/* Header */}
+                  <div className={`text-center flex flex-col items-center justify-center ${headerHeight}`}>
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="w-10 h-10 sm:w-18 sm:h-18 rounded-full flex items-center justify-center overflow-hidden">
+                        <Image
+                          src={plan.image}
+                          alt={`${plan.name} icon`}
+                          width={48}
+                          height={48}
+                          className="object-contain"
+                        />
+                      </div>
+
+                      <h3 className="text-sm sm:text-[24px] font-[500] text-black">{plan.name}</h3>
+                      <div className="sm:flex">
+                        <p className="text-lg sm:text-4xl font-[600] text-black">{plan.price}</p>
+                        <p className="text-[10px] flex justify-center items-end sm:text-[24px] font-normal text-[#838383]">{plan.per}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Feature Rows */}
+                  <div className="flex flex-col">
+                    {features.map((feature, j) => {
+                      const value = plan.contents[feature];
+                      return (
+                        <div
+                          key={j}
+                          className={`flex justify-center items-center px-1 sm:px-4 ${rowHeight} ${j === 0 ? "" : "border-t border-gray-200"}`}
+                        >
+                          {value === "gray-icon" ? (
+                            <div className=" w-4 h-4 sm:w-5 sm:h-5 bg-gray-400 rounded-full flex items-center justify-center">
+                              <MdDone className="text-white w-3 h-3 sm:w-5 sm:h-5" />
+                            </div>
+                          ) : value === "🌸" ? (
+                            <div className="w-5 h-5 sm:w-7 sm:h-7 flex items-center justify-center">
+                              <HiBadgeCheck className="text-[#c81a7a] w-5 h-5 sm:w-7 sm:h-7" />
+                            </div>
+                          ) : (
+                            <span className="text-xs sm:text-[20px] font-[600] text-black">{value}</span>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Plan Columns */}
-          {plans.map((plan, i) => (
-            <div
-              key={i}
-              className="flex flex-col bg-white hover:border-2 hover:border-[#b17af0] transition-all duration-200"
-            >
-              {/* Plan Header */}
-              <div
-                className={`text-center flex flex-col items-center justify-center ${headerHeight}`}
-              >
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-12 h-12 bg-[#b17af0]/10 rounded-full flex items-center justify-center">
-                    <Layers className="text-[#b17af0] w-6 h-6" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-[#6a359c]">
-                    {plan.name}
-                  </h3>
-                  <p className="text-3xl font-bold text-gray-900">
-                    {plan.price}
-                    <span className="text-base font-normal text-gray-500">
-                      {plan.per}
-                    </span>
-                  </p>
-                </div>
-              </div>
-
-              {/* Feature Rows */}
-              <div className="flex flex-col">
-                {features.map((feature, j) => (
-                  <div
-                    key={j}
-                    className={`flex justify-center items-center px-4 ${rowHeight} ${
-                      j === 0 ? "" : "border-t border-gray-200"
-                    }`}
-                  >
-                    <span
-                      className={`${
-                        plan.contents[feature] === "🌸"
-                          ? "text-pink-500 text-lg"
-                          : plan.contents[feature].includes("Upto") ||
-                            plan.contents[feature].includes("Intervals") ||
-                            plan.contents[feature].includes("Shared") ||
-                            plan.contents[feature].includes("Monthly") ||
-                            plan.contents[feature].includes("Everyday")
-                          ? "font-semibold text-gray-900"
-                          : "text-gray-800"
-                      }`}
-                    >
-                      {plan.contents[feature]}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
         </div>
-      </div>
+      </section>
     </section>
   );
 }
