@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
-import { User, Globe, Mail, ArrowRight } from "lucide-react";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 import { IoIosPhonePortrait } from "react-icons/io";
+import { User, Globe, Mail, ArrowRight } from "lucide-react";
 
 const services = [
     "Digital Marketing Services (Paid Ads, SEO, etc.)",
@@ -14,6 +16,7 @@ const services = [
 
 export default function GetStartedForm() {
     const [selectedServices, setSelectedServices] = useState([]);
+    const [phone, setPhone] = useState("");
 
     const toggleService = (service) => {
         setSelectedServices((prev) =>
@@ -101,18 +104,40 @@ export default function GetStartedForm() {
 
                         <div>
                             <label className="block text-[14px] font-[500] text-black mb-3">
-                                Your Phone Number/WhatsApp{" "}
-                                <span className="text-red-500">*</span>
+                                Your Phone Number/WhatsApp <span className="text-red-500">*</span>
                             </label>
                             <div className="relative">
-                                <input
-                                    type="tel"
-                                    placeholder="Your phone number/WhatsApp"
-                                    required
-                                    className="w-full rounded-lg pr-10 py-5 pl-4 bg-white shadow-sm text-gray-800 placeholder-gray-400 border-none outline-none focus:ring-0 focus:border-none"
+                                <PhoneInput
+                                    country={"bd"}
+                                    value={phone}
+                                    onChange={setPhone}
+                                    inputStyle={{
+                                        width: "100%",
+                                        height: "64px",       
+                                        borderRadius: "0.50rem",
+                                        paddingLeft: "70px", 
+                                        backgroundColor: "white",
+                                        border: "none",
+                                        boxShadow: "0 1px 2px rgba(0,0,0,0.1)",
+                                        color: "#1F2937",
+                                        fontSize: "16px",
+                                    }}
+                                    buttonStyle={{
+                                        border: "none",
+                                        background: "transparent",
+                                        top: "50%",
+                                        transform: "translateY(-50%)",
+                                        left: "10px",
+                                        width: "70px",      
+                                        height: "70px",
+                                    }}
+                                    dropdownStyle={{
+                                        borderRadius: "0.5rem",
+                                    }}
+                                    enableSearch={true}
                                 />
                                 <IoIosPhonePortrait
-                                    className="absolute right-5 top-5 text-gray-300"
+                                    className="absolute right-5 top-1/2 -translate-y-1/2 text-gray-300"
                                     size={28}
                                 />
                             </div>
