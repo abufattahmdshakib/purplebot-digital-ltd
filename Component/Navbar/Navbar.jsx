@@ -202,7 +202,7 @@ const Navbar = () => {
                 </Link>
 
                 <div className="flex justify-center pt-3 pb-5">
-                    <Link href="/contact" onClick={handleMobileLinkClick}>
+                    <Link href="/getAQuote" onClick={handleMobileLinkClick}>
                         <button className="relative text-[22px] inline-flex items-center justify-center gap-2 h-14 px-8 rounded-[48px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold">
                             Get A Quote
                         </button>
