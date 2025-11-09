@@ -3,6 +3,8 @@
 import { ArrowRight } from 'lucide-react'
 import React, { useState } from 'react'
 import Image from 'next/image'
+import { useRouter } from "next/navigation";
+
 
 
 //  Define your data as a constant
@@ -29,6 +31,7 @@ const chooseData = [
 
 function WhyChoose() {
     const [activeIndex, setActiveIndex] = useState(null);
+    const router = useRouter();
 
     return (
         <section className='bg-gradient-to-t from-[#851B67] to-[#C81A7A] py-10 md:py-20'>
@@ -51,7 +54,7 @@ function WhyChoose() {
                         </p>
 
                         {/* Button */}
-                        <button className="relative text-[18px] md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer md:mt-6">
+                        <button onClick={() => router.push("/about")} className="relative text-[18px] md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer md:mt-6">
                             <span className="flex items-center gap-2 transform transition-transform duration-700 translate-x-4 group-hover:-translate-x-3">
                                 Learn More
                                 <ArrowRight

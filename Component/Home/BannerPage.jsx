@@ -4,9 +4,11 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const BannerPage = () => {
   const [bgImage, setBgImage] = useState("none");
+  const router = useRouter();
 
   useEffect(() => {
     if (window.innerWidth >= 768) {
@@ -66,8 +68,10 @@ const BannerPage = () => {
           <p className="text-[#000] text-[16px] md:text-[32px] max-w-[350px] mx-auto md:mx-0 font-normal">
             Expert solutions tailored to your brand
           </p>
-
-          <button className="relative text-[18px] text-center md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
+          <button
+            onClick={() => router.push("/getAQuote")}
+            className="relative text-[18px] text-center md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer"
+          >
             <span className="flex items-center gap-2 transform transition-transform duration-700 translate-x-4 group-hover:-translate-x-3">
               Get Started
               <ArrowRight
