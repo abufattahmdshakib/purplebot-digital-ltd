@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
-import projects from "./projects ";
+import projects from "./projects";
 
 // ✅ Function to generate full sequence with text first
 const generateSequence = (arr) => ["ourwork", ...arr];
