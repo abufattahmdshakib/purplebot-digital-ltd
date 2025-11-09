@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { MdDone } from "react-icons/md";
 import { HiBadgeCheck } from "react-icons/hi";
+import GetStartedForm from "./GetStartedForm";
 
 const plans = [
   {
@@ -97,10 +98,10 @@ export default function PlansPricingBanner() {
         </h2>
       </div>
 
-      <section className="p-2 sm:p-4">
+      <section className="p-2 sm:p-4 ">
         <div className="max-w-6xl mx-auto">
           {/* Card Wrapper */}
-          <div className="bg-white rounded-3xl shadow-xl overflow-x-auto p-4 sm:p-12">
+          <div className="bg-white rounded-3xl shadow-sm overflow-x-auto p-4 sm:p-12 border border-[#ed88bf]">
             <div className="grid grid-cols-4 gap-2 sm:gap-4">
               {/* Feature Column */}
               <div className="flex flex-col border-gray-300">
@@ -174,6 +175,7 @@ export default function PlansPricingBanner() {
           </div>
         </div>
       </section>
+      <GetStartedForm />
     </section>
   );
 }

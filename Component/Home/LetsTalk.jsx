@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRight } from 'lucide-react';
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaBehance } from 'react-icons/fa';
@@ -5,8 +7,16 @@ import { FaArrowRight, FaGithub } from 'react-icons/fa6';
 import { IoMailUnreadOutline } from "react-icons/io5";
 
 function LetsTalk() {
+
+  const handleEnterClear = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      e.target.value = "";
+    }
+  };
+
   return (
-    <section className="max-w-6xl mx-auto px-2 md:px-0 flex flex-col md:flex-row items-center justify-between gap-6 bg-white mb-8">
+    <section className="max-w-6xl mx-auto px-2 md:px-0 flex flex-col md:flex-row items-center justify-between gap-6 bg-white pt-4 mb-8">
 
       {/* Left: Contact Info */}
       <div className="flex-1 text-left">
@@ -63,30 +73,29 @@ function LetsTalk() {
         </p>
         <p className='text-sm md:text-[18px] font-[500] text-black mb-4'>We'll keep it fun and short – we promise!</p>
 
-        <form className="flex flex-col sm:flex-row items-center gap-3 relative mb-6">
+        <form className="flex flex-col items-center gap-3 relative mb-6">
           <div className="relative w-full sm:flex-1">
             <input
               type="email"
               placeholder="Subscribe Now"
-              className="w-full h-14 px-4 pr-12 bg-[#F3DEEE] rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C91A7B] placeholder-white placeholder:text-[20px] placeholder:font-[500] "
+              className="w-full h-14 px-4 pr-12 text-black bg-[#F3DEEE] rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C91A7B] placeholder-white placeholder:text-[20px] placeholder:font-[500] "
             />
             {/* Inbox Icon */}
             <IoMailUnreadOutline
               className="text-gray-400 w-6 h-6 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"
             />
           </div>
+          <button onKeyDown={handleEnterClear} className="relative text-[18px] text-center md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
+            <span className="flex items-center gap-2 transform transition-transform duration-700 translate-x-4 group-hover:-translate-x-3">
+              Subscribe Now
+              <ArrowRight
+                size={26}
+                strokeWidth={3}
+                className="opacity-0 translate-x-[5px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-700"
+              />
+            </span>
+          </button>
         </form>
-
-        <button className="relative text-[18px] text-center md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
-          <span className="flex items-center gap-2 transform transition-transform duration-700 translate-x-4 group-hover:-translate-x-3">
-            Subscribe Now
-            <ArrowRight
-              size={26}
-              strokeWidth={3}
-              className="opacity-0 translate-x-[5px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-700"
-            />
-          </span>
-        </button>
       </div>
     </section>
   );
