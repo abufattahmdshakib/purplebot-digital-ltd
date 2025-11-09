@@ -6,7 +6,6 @@ import ExploreOurWork from "../../Component/Home/ExploreOurWork";
 import WhyChoose from "../../Component/Home/WhyChoose";
 import WeOffer from "../../Component/Home/WeOffer";
 import ServicePackages from "../../Component/Home/ServicePackages";
-import LetsTalk from "../../Component/Home/LetsTalk";
 
 function Home() {
   return (
@@ -24,7 +23,6 @@ function Home() {
             <WhyChoose />
             <WeOffer />
             <ServicePackages />
-            <LetsTalk /> 
           </div>
 
         </div>

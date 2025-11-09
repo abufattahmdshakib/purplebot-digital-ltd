@@ -104,7 +104,7 @@ const Navbar = () => {
 
                 {/* Desktop Button */}
                 <div className="hidden md:block">
-                    <Link href="/contact">
+                    <Link href="/getAQuote">
                         <button className="relative text-[22px] inline-flex items-center justify-center gap-3 h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
                             <span className="flex items-center gap-3 transform transition-transform duration-700  translate-x-5 group-hover:-translate-x-2">
                                 Get A Quote

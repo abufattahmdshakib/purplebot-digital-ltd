@@ -1,6 +1,5 @@
 import React from 'react'
 import AboutBanner from '../../../Component/About/AboutBanner'
-import LetsTalk from '../../../Component/Home/LetsTalk'
 
 function About() {
     return (
@@ -10,7 +9,6 @@ function About() {
                 <div className="flex flex-col justify-between">
                     <div className='flex-1'>
                         <AboutBanner />
-                        <LetsTalk /> 
                     </div>
                 </div>
             </div>

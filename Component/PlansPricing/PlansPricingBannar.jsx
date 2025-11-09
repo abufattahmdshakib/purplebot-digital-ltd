@@ -89,11 +89,11 @@ export default function PlansPricingBanner() {
 
   return (
     <section className="bg-gradient-to-l from-[#ECB9D6] via-[#FFF] to-[#CCAFDD]">
-      <div className="leading-18 sm:leading-20 py-10 sm:py-16">
-        <h1 className="text-center text-[38px] sm:text-[64px] font-[700] sm:font-[800] px-1 text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67]">
+      <div className="leading-18 sm:leading-15 py-10 sm:py-16">
+        <h1 className="text-center text-[38px] sm:text-[48px] font-[700] sm:font-[800] px-1 text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67]">
           Fixed Packages
         </h1>
-        <h2 className="text-center leading-9 sm:leading-20 text-[28px] sm:text-[64px] font-[500] px-1 text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67]">
+        <h2 className="text-center leading-9 sm:leading-20 text-[28px] sm:text-[48px] font-[500] px-1 text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67]">
           for Social Media Management
         </h2>
       </div>

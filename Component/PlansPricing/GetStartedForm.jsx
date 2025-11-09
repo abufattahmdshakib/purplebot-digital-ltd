@@ -33,7 +33,7 @@ export default function GetStartedForm() {
     return (
         <section className="flex items-center justify-center px-2 sm:px-4 py-12">
             <div className="w-full max-w-6xl bg-[#FFFFFF33] backdrop-blur-2xl rounded-3xl shadow-sm border border-[#ed88bf] p-2 sm:p-8">
-                <h2 className="text-[38px] sm:text-[64px] font-[700] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67] mb-2">
+                <h2 className="text-[38px] sm:text-[64px] font-[700] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67] pt-12 mb-2">
                     Get Started
                 </h2>
                 <p className="text-center w-80 sm:w-full mx-auto text-[24px] text-gray-500 font-[400] mb-10">
@@ -121,7 +121,7 @@ export default function GetStartedForm() {
 
                     {/* Services Section */}
                     <div>
-                        <h3 className="text-[38px] sm:text-[40px] font-[600] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67] mt-10 mb-2">
+                        <h3 className="text-[38px] sm:text-[40px] font-[600] leading-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67] mt-10 mb-2">
                             Services you are interested in
                         </h3>
                         <p className="text-center text-[24px] text-gray-500 font-[400] mb-16">
