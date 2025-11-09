@@ -40,7 +40,7 @@ function OurWorkPhotos() {
                 {filteredProjects.map((item, idx) => (
                     <div
                         key={`proj-${idx}`}
-                        className="relative flex-shrink-0 w-44 md:w-80  mx-auto group overflow-hidden shadow-lg"
+                        className="relative flex-shrink-0 w-40 md:w-80  mx-auto group overflow-hidden shadow-lg"
                     >
                         <img
                             src={item.image}
