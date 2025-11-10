@@ -4,10 +4,11 @@ import React, { useEffect, useState } from "react";
 import { MdDone } from "react-icons/md";
 import { FaUpRightFromSquare } from "react-icons/fa6";
 import { ArrowRight, Circle } from "lucide-react";
-import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function ServicePackages() {
     const [selectedPlan, setSelectedPlan] = useState("Lite");
+    const router = useRouter();
 
     const [bgStyle, setBgStyle] = useState({
         backgroundImage: "none",
@@ -138,7 +139,7 @@ function ServicePackages() {
                         </label>
                     ))}
 
-                    <button className="flex justify-center items-center gap-2 w-full py-9 rounded-xl bg-[#8E4EB526] text-[#C91A7B] text-[14px] font-[500] transition-all cursor-pointer">
+                    <button onClick={() => router.push("/plansPricing")} className="flex justify-center items-center gap-2 w-full py-9 rounded-xl bg-[#8E4EB526] text-[#C91A7B] text-[14px] font-[500] transition-all cursor-pointer">
                         See pricing comparison <span><FaUpRightFromSquare size={12} /></span>
                     </button>
                 </div>
@@ -166,7 +167,7 @@ function ServicePackages() {
                     <p className="text-[17px] md:text-[20px] font-[500] text-white md:w-[80%] mx-auto md:mx-0 mt-4 mb-3">
                         Feel free to let us know more about your requirements. We will reach out to you with a response.
                     </p>
-                    <button className="relative text-[18px] text-center md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
+                    <button onClick={() => router.push("/getAQuote")} className="relative text-[18px] text-center md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
                         <span className="flex items-center gap-2 transform transition-transform duration-700 translate-x-4 group-hover:-translate-x-3">
                             Get a Quote
                             <ArrowRight
