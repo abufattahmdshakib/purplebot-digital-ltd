@@ -34,7 +34,7 @@ const weOfferData = [
   },
 ];
 
-function WeOffer() {  // ✅ function name fixed
+function WeOffer() { 
   const [bgStyle, setBgStyle] = useState({
     backgroundImage: "none",
     backgroundRepeat: "no-repeat",

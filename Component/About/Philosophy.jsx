@@ -4,11 +4,11 @@ function Philosophy() {
   return (
     <div className="sm:px-0 px-2 sm:pb-0 pb-10">
       <div
-        className="bg-cover bg-center bg-no-repeat text-white p-6"
+        className="bg-cover bg-center bg-no-repeat text-white p-3 sm:p-6"
         style={{ backgroundImage: "url('/assist/Philosophy-bg.png')" }}
       >
         <div className="text-center">
-          <h1 className="text-[40px] md:text-[56px] font-[700] leading-12 sm:leading-14 mt-0 sm:mt-12 mb-8 text-transparent bg-clip-text bg-gradient-to-t from-[#851B67] to-[#C81A7A]">
+          <h1 className="text-[40px] md:text-[56px] font-[700] leading-12 sm:leading-14 mt-0 sm:mt-12 mb-8 text-transparent bg-clip-text bg-gradient-to-l from-[#9e1b6e] to-[#C81A7A]">
             The Purple Philosophy
           </h1>
           <p className="text-[16px] font-[400] my-12">
