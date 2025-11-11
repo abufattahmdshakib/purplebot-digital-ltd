@@ -58,7 +58,7 @@ const Territories = () => {
       </div>
 
       {/* LEFT IMAGE */}
-      <div className="flex-1 -mt-[230px] sm:-mt-[500px] flex justify-center sm:justify-start">
+      <div className="flex-1 -mt-[250px] sm:-mt-[500px] flex justify-center sm:justify-start">
         <Image
           src="/assist/binocular.webp"
           alt="Exploration Hero"
