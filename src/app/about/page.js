@@ -5,7 +5,6 @@ import AboutBanner from '../../../Component/About/AboutBanner'
 import Philosophy from '../../../Component/About/Philosophy'
 import MemberTeam from '../../../Component/About/MemberTeam'
 import Experience from '../../../Component/About/Experience'
-import Territories from '../../../Component/About/Territories';
 
 function About() {
 
@@ -47,9 +46,6 @@ function About() {
                 <div className="flex flex-col justify-between">
                     <div className='flex-1'>
                         <AboutBanner />
-                        <div className="bg-gradient-to-r from-[#ccafdd] via-[#fff] to-[#fff]">
-                            <Territories />
-                        </div>
                         <Experience />
                         <div style={bgStyle} className=' pt-12 relative z-0'>
                             <MemberTeam />

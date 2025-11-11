@@ -15,8 +15,8 @@ body {
 /* Shape wrapper background overlay */
 .shape-wrapper {
   position: relative;
-  width: 100%;
-  min-height: 80vh;
+  height: auto;      
+  min-height: 0;
 }
 
 /* ✅ Full shape div behind content */
@@ -71,4 +71,97 @@ body {
 .animate-scaleLoop {
   animation: scaleLoop 8s ease-in-out infinite;
   transform-origin: center;
+}
+
+/* reverse */
+
+/* Shape wrapper background overlay */
+.shape-wrapper-reverse {
+  position: relative;
+  width: 90%;
+  min-height: 80vh;
+}
+
+/* ✅ Full shape div behind content */
+.shape-reverse {
+  position: absolute;
+  background: linear-gradient(270deg, #fff, #e9ddf1);
+  inset: 0;
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 95%);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  z-index: -1;
+  border: 2px solid;
+  border-radius: 8px;
+  pointer-events: none;
+  -webkit-mask:linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  border-image-source: linear-gradient(180deg, #ffbaf0 2.54%, #fff 74.71%);
+}
+
+
+/* Hover: rotate the full shape */
+.shape-wrapper-reverse:hover .shape-reverse {
+  transform: rotate(-2deg);
+}
+
+/* Responsive fix: mobile */
+@media (max-width: 768px) {
+  .shape-reverse {
+    clip-path: none;
+    transform: none !important;
+  }
+}
+
+/* Scale animation for right-side image */
+@keyframes scaleLoop {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.25);
+  }
+
+  30% {
+    transform: scale(1.25);
+  }
+
+  60% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-scaleLoop {
+  animation: scaleLoop 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+
+
+/* Floating Rotate Animation */
+@keyframes float-rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* Reusable class */
+.floating-rotate {
+  animation: float-rotate 5s ease-in-out infinite;
+  transform-origin: center;
+  display: inline-block;
 }
