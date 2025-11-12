@@ -13,7 +13,7 @@ const Territories = () => {
           alt="Cloud Left"
           width={250}
           height={150}
-          className="absolute max-w-[200px] sm:max-w-[300px] floating-rotate top-[-70px] sm:top-[-100px] left-[20px] sm:left-[380px] z-80"
+          className="absolute max-w-[200px] sm:max-w-[300px] floating-rotate top-[-70px] sm:top-[-100px] left-[20px] sm:left-[380px] z-40"
         />
         {/* Right Cloud (foreground) */}
         <Image
@@ -21,7 +21,7 @@ const Territories = () => {
           alt="Cloud Right"
           width={300}
           height={250}
-          className="absolute max-w-[220px] sm:max-w-[300px] floating-rotate top-[-140px] sm:top-[-120px] right-[20px] sm:right-[10px] z-[50]"
+          className="absolute max-w-[220px] sm:max-w-[300px] floating-rotate top-[-140px] sm:top-[-120px] right-[20px] sm:right-[10px] z-[40]"
         />
         {/* Bottom Leaf */}
         <Image
@@ -29,7 +29,7 @@ const Territories = () => {
           alt="Leaf"
           width={300}
           height={300}
-          className="absolute max-w-[200px] sm:max-w-[300px] floating-rotate bottom-54 sm:bottom-[50px] right-[-40px] sm:right-[-70px] z-80"
+          className="absolute max-w-[200px] sm:max-w-[300px] floating-rotate bottom-54 sm:bottom-[50px] right-[-40px] sm:right-[-70px] z-40"
         />
       </div>
 
@@ -64,7 +64,7 @@ const Territories = () => {
           alt="Exploration Hero"
           width={650}
           height={650}
-          className="object-contain max-w-[400px] sm:max-w-[700px] -mb-14 pb-12 sm:pb-0 z-100"
+          className="object-contain max-w-[400px] sm:max-w-[700px] -mb-14 pb-12 sm:pb-0 z-40"
         />
       </div>
     </section>

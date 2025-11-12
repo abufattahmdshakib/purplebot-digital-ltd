@@ -5,7 +5,7 @@ import Image from "next/image";
 function DigitalMarketingHome() {
 
   return (
-    <section className="w-full bg-[linear-gradient(104deg,#ccafdd,#fff,#fff,#fff)] py-20">
+    <section className="w-full">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between px-2 sm:px-8">
         {/* LEFT SIDE TEXT */}
         <div className="text-center sm:text-left mt-6 sm:mt-0">

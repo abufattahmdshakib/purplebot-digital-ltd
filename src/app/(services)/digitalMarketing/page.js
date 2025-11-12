@@ -1,12 +1,25 @@
-import React from 'react'
+"use client";
+import React from 'react';
 import DigitalMarketingHome from '../../../../Component/Services/DigitalMarketing/DigitalMarketingHome'
+import SocialMedia from '../../../../Component/Services/DigitalMarketing/SocialMedia';
 
 function DigitalMarketing() {
-  return (
-    <div>
-       <DigitalMarketingHome />
-    </div>
-  )
+
+
+    return (
+        <div className="container mx-auto bg-gradient-to-r from-[#ccafdd] via-[#fff] to-[#fff]">
+            <div className='pt-4 md:pt-6'>
+                <div className="flex flex-col justify-between">
+                    <div className='flex-1'>
+                        <div className=' pt-12 relative z-0'>
+                            <DigitalMarketingHome />
+                            <SocialMedia />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default DigitalMarketing
