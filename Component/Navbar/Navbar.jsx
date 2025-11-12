@@ -61,7 +61,7 @@ const Navbar = () => {
                         {isDropdownOpen && (
                             <div className="absolute left-0 top-full bg-gray-50 rounded-lg py-2 w-80 z-10 shadow-lg">
                                 <Link
-                                    href="/services/digital-marketing"
+                                    href="/digitalMarketing"
                                     className="block px-4 py-2 text-black font-poppins md:text-[18px] font-semibold hover:bg-gray-100 hover:text-[#8136AE] transition"
                                 >
                                     Digital Marketing
@@ -156,7 +156,7 @@ const Navbar = () => {
                         className={`overflow-hidden transition-all duration-500 ${isDropdownOpen ? "max-h-96" : "max-h-0"}`}
                     >
                         <Link
-                            href="/services/digital-marketing"
+                            href="/digitalMarketing"
                             className="block pl-12 py-2 text-black font-poppins font-bold"
                             onClick={handleMobileLinkClick}
                         >
