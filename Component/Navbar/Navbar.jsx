@@ -67,19 +67,19 @@ const Navbar = () => {
                                     Digital Marketing
                                 </Link>
                                 <Link
-                                    href="/services/branding"
+                                    href="/brandingGraphics"
                                     className="block px-4 py-2 text-black font-poppins md:text-[18px] font-semibold hover:bg-gray-100 hover:text-[#8136AE] transition"
                                 >
                                     Branding & Graphics Design
                                 </Link>
                                 <Link
-                                    href="/services/video-editing"
+                                    href="/videoEditing"
                                     className="block px-4 py-2 text-black font-poppins md:text-[18px] font-semibold hover:bg-gray-100 hover:text-[#8136AE] transition"
                                 >
                                     Video Editing & Animation
                                 </Link>
                                 <Link
-                                    href="/services/web-tech"
+                                    href="/websiteTech"
                                     className="block px-4 py-2 text-black font-poppins md:text-[18px] font-semibold hover:bg-gray-100 hover:text-[#8136AE] transition"
                                 >
                                     Website & Tech
@@ -163,21 +163,21 @@ const Navbar = () => {
                             Digital Marketing
                         </Link>
                         <Link
-                            href="/services/branding"
+                            href="/brandingGraphics"
                             className="block pl-12 py-2 text-black font-poppins font-bold"
                             onClick={handleMobileLinkClick}
                         >
                             Branding & Graphics Design
                         </Link>
                         <Link
-                            href="/services/video-editing"
+                            href="/videoEditing"
                             className="block pl-12 py-2 text-black font-poppins font-bold"
                             onClick={handleMobileLinkClick}
                         >
                             Video Editing & Animation
                         </Link>
                         <Link
-                            href="/services/web-tech"
+                            href="/websiteTech"
                             className="block pl-12 py-2 text-black font-poppins font-bold"
                             onClick={handleMobileLinkClick}
                         >

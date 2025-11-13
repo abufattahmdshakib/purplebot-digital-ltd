@@ -51,7 +51,7 @@ function OurWork() {
     }, [scrollWidth]);
 
     // Generate sequences using projects array
-    const projectItems = projects.map((proj) => proj); // just to be clear
+    const projectItems = projects.map((proj) => proj);
     const sequence = generateSequence(projectItems);
     const duplicateSequence = generateSequence(projectItems);
 
