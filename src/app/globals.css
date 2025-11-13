@@ -73,9 +73,8 @@ body {
   transform-origin: center;
 }
 
-/* reverse */
 
-/* Shape wrapper background overlay */
+/* Shape wrapper background overlay reverse*/
 .shape-wrapper-reverse {
   position: relative;
   width: 90%;
@@ -166,8 +165,8 @@ body {
   display: inline-block;
 }
 
-/* (services) */
-/* Shape wrapper background overlay */
+
+/* Shape wrapper background overlay services*/
 .shape-wrapper-services {
   position: relative;
   width: 100%;
@@ -201,37 +200,7 @@ body {
   }
 }
 
-/* Scale animation for right-side image */
-@keyframes scaleLoop {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(1.25);
-  }
-
-  30% {
-    transform: scale(1.25);
-  }
-
-  60% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.animate-scaleLoop {
-  animation: scaleLoop 8s ease-in-out infinite;
-  transform-origin: center;
-}
-
-
-/* (services reverse) */
-/* Shape wrapper background overlay */
+/* Shape wrapper background overlay services reverse*/
 .shape-wrapper-services-reverse {
   position: relative;
   width: 75%;
@@ -275,30 +244,36 @@ body {
   }
 }
 
-/* Scale animation for right-side image */
-@keyframes scaleLoop {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(1.25);
-  }
-
-  30% {
-    transform: scale(1.25);
-  }
-
-  60% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+/* Shape wrapper background overlay services-seosem */
+.shape-wrapper-seosem {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
 }
 
-.animate-scaleLoop {
-  animation: scaleLoop 8s ease-in-out infinite;
+/* ✅ Full shape div behind content */
+.shape-seosem {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #e9ddf1, #e9ddf1, #fff, #fff);
+  clip-path: polygon(0 0, 100% 9%, 100% 93%, 0 100%);
+  transition: transform 0.5s ease-in-out;
   transform-origin: center;
+  z-index: -1;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+/* Hover: rotate the full shape */
+.shape-wrapper-seosem:hover .shape-seosem {
+  transform: rotate(2deg);
+}
+
+/* Responsive fix: mobile */
+@media (max-width: 768px) {
+  .shape-seosem {
+    clip-path: none;
+    transform: none !important;
+  }
 }

@@ -11,7 +11,7 @@ const DigitalAds = () => {
     ];
 
     return (
-        <section className="px-2  mt-0 relative py-8 z-10 overflow-hidden">
+        <section className="px-2 mt-0 sm:mt-18 relative py-8 z-10 overflow-hidden">
             {/* Shape Wrapper */}
             <div className="shape-wrapper-services-reverse left-0 sm:left-70 relative flex flex-col sm:flex-row items-center justify-between gap-4">
                 {/* Background Shape */}
