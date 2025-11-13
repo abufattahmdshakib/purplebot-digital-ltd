@@ -10,7 +10,7 @@ export default function NotFound() {
                 <span className="absolute p-[3px] bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-[#C91A7B] via-[#851b678c] to-[#1f021203]"></span>
             </h1>
             <p className="text-2xl font-[600] bg-clip-text text-transparent bg-gradient-to-r from-[#A72793] to-[#8136AE] mb-6">
-                Oops! The page you're looking for does not exist.
+                Oops! The page your looking for does not exist.
             </p>
             <Link href="/">
                 <button className="relative text-[22px] inline-flex items-center justify-center gap-3 h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
