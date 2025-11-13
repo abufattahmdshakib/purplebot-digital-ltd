@@ -19,7 +19,7 @@ export default function NotFound() {
                         <ArrowRight
                             size={26}
                             strokeWidth={3}
-                            className=" opacity-0 translate-x-[5px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-700"
+                            className="opacity-0 translate-x-[5px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-700"
                         />
                     </span>
                 </button>
