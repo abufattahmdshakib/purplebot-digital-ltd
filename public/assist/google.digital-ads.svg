@@ -1,0 +1,20 @@
+<svg width="51" height="53" viewBox="0 0 51 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Clip path group">
+<mask id="mask0_1_8262" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="53">
+<g id="clippath">
+<path id="Vector" d="M51 0.5H0V52.5H51V0.5Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_1_8262)">
+<g id="Group">
+<path id="Vector_2" d="M43.3 7.16C40.81 9.65 38.48 11.97 36.03 14.43C32.72 11.51 28.73 10.23 24.25 10.77C20.86 11.17 17.93 12.62 15.46 15C10.29 19.95 9.03996 27.6 12.37 33.92C15.72 40.26 22.49 43.4 29.75 41.97C35.32 40.87 39.6 36.69 40.04 31.73H26.16V21.79H50.38C53.17 34.46 46.71 50.28 29.52 52.31C15.71 53.94 3.59997 44.98 0.659971 32.17C-3.25003 15.15 11.02 -1.07 28.4 0.619998C34.09 1.17 39.03 3.27 43.3 7.16Z" fill="url(#paint0_linear_1_8262)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_8262" x1="25.5" y1="0.499998" x2="25.5" y2="52.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8236AF"/>
+<stop offset="1" stop-color="#361039"/>
+</linearGradient>
+</defs>
+</svg>

@@ -228,3 +228,77 @@ body {
   animation: scaleLoop 8s ease-in-out infinite;
   transform-origin: center;
 }
+
+
+/* (services reverse) */
+/* Shape wrapper background overlay */
+.shape-wrapper-services-reverse {
+  position: relative;
+  width: 75%;
+  height: auto;
+  min-height: 0;
+}
+
+/* ✅ Full shape div behind content */
+.shape-services-reverse {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #ffffff86, #ffffff62, #e9ddf1, #e9ddf1, #e9ddf1);
+  clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 88%);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+  z-index: -1;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid;
+  border-radius: 16px;
+  pointer-events: none;
+  -webkit-mask: linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  border-image-source: linear-gradient(180deg, #ffbaf0 2.54%, #fff 74.71%);
+}
+
+/* Hover: rotate the full shape */
+.shape-wrapper-services-reverse:hover .shape-services-reverse {
+  transform: rotate(2deg);
+}
+
+/* Responsive fix: mobile */
+@media (max-width: 768px) {
+  .shape-wrapper-services-reverse {
+    width: 100%;
+  }
+
+  .shape-services-reverse {
+    clip-path: none;
+    transform: none !important;
+  }
+}
+
+/* Scale animation for right-side image */
+@keyframes scaleLoop {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.25);
+  }
+
+  30% {
+    transform: scale(1.25);
+  }
+
+  60% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-scaleLoop {
+  animation: scaleLoop 8s ease-in-out infinite;
+  transform-origin: center;
+}

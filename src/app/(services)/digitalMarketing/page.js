@@ -3,6 +3,7 @@ import React from 'react';
 import DigitalMarketingHome from '../../../../Component/Services/DigitalMarketing/DigitalMarketingHome'
 import SocialMedia from '../../../../Component/Services/DigitalMarketing/SocialMedia';
 import Subscription from '../../../../Component/Services/DigitalMarketing/Subscription';
+import DigitalAds from '../../../../Component/Services/DigitalMarketing/DigitalAds';
 
 function DigitalMarketing() {
 
@@ -16,6 +17,7 @@ function DigitalMarketing() {
                             <DigitalMarketingHome />
                             <SocialMedia />
                             <Subscription />
+                            <DigitalAds />
                         </div>
                     </div>
                 </div>
