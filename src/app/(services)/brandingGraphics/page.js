@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import Branding from '../../../../Component/Services/BrandingGraphics/Branding';
+import LogoandBrand from '../../../../Component/Services/BrandingGraphics/LogoandBrand';
 
 function BrandingGraphics() {
   return (
@@ -10,6 +11,7 @@ function BrandingGraphics() {
           <div className='flex-1'>
             <div className=' pt-12 relative z-0'>
               <Branding />
+              <LogoandBrand />
             </div>
           </div>
         </div>
