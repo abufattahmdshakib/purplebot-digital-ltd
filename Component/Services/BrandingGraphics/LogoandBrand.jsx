@@ -56,7 +56,7 @@ const LogoandBrand = () => {
                             alt="Main Character"
                             width={900}
                             height={900}
-                            className="object-contain mx-auto max-w-[400px] sm:max-w-[700px]"
+                            className="object-contain mx-auto max-w-[370px] sm:max-w-[700px]"
                         />
                     </div>
                 </div>
