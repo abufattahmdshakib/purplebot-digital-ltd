@@ -96,6 +96,10 @@ const SeoSem = () => {
 
                 ))}
             </div>
+            <div className="text-center mt-12 sm:mt-24">
+                <h1 className="text-[28px] sm:text-[38px] text-black font-[400]">Check out how we helped some of our clients with</h1>
+                <h1 className="text-[36px] sm:text-[48px] font-[900] text-transparent bg-clip-text bg-gradient-to-l from-[#851b67] to-[#c81a7a]">Digital Marketing</h1>
+            </div>
         </section >
     );
 };

@@ -3,6 +3,7 @@ import React from 'react'
 import Branding from '../../../../Component/Services/BrandingGraphics/Branding';
 import LogoandBrand from '../../../../Component/Services/BrandingGraphics/LogoandBrand';
 import PrintMaterial from '../../../../Component/Services/BrandingGraphics/PrintMaterial';
+import CustomArt from '../../../../Component/Services/BrandingGraphics/CustomArt';
 
 function BrandingGraphics() {
   return (
@@ -14,6 +15,7 @@ function BrandingGraphics() {
               <Branding />
               <LogoandBrand />
               <PrintMaterial />
+              <CustomArt />
             </div>
           </div>
         </div>
