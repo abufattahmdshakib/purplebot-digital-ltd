@@ -4,6 +4,7 @@ import Branding from '../../../../Component/Services/BrandingGraphics/Branding';
 import LogoandBrand from '../../../../Component/Services/BrandingGraphics/LogoandBrand';
 import PrintMaterial from '../../../../Component/Services/BrandingGraphics/PrintMaterial';
 import CustomArt from '../../../../Component/Services/BrandingGraphics/CustomArt';
+import Merchandise from '../../../../Component/Services/BrandingGraphics/Merchandise';
 
 function BrandingGraphics() {
   return (
@@ -16,6 +17,7 @@ function BrandingGraphics() {
               <LogoandBrand />
               <PrintMaterial />
               <CustomArt />
+              <Merchandise />
             </div>
           </div>
         </div>
