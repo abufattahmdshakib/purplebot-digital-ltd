@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const weOfferData = [
   {
@@ -10,6 +11,7 @@ const weOfferData = [
     description:
       "Drive your brand forward with holistic digital marketing solutions aimed to drive results.",
     image: "/assist/digital-marketing 1.svg",
+    path: "/digitalMarketing",
   },
   {
     id: 2,
@@ -17,6 +19,7 @@ const weOfferData = [
     description:
       "Engage your audience with captivating animated video content.",
     image: "/assist/digital-marketing 2.svg",
+    path: "/videoEditing",
   },
   {
     id: 3,
@@ -24,6 +27,7 @@ const weOfferData = [
     description:
       "Elevate your brand with our bespoke graphic design solutions.",
     image: "/assist/digital-marketing 3.svg",
+    path: "/brandingGraphics",
   },
   {
     id: 4,
@@ -31,10 +35,13 @@ const weOfferData = [
     description:
       "Empower your business with our cutting-edge tech solutions.",
     image: "/assist/digital-marketing 4.svg",
+    path: "/websiteTech",
   },
 ];
 
-function WeOffer() { 
+
+function WeOffer() {
+  const router = useRouter();
   const [bgStyle, setBgStyle] = useState({
     backgroundImage: "none",
     backgroundRepeat: "no-repeat",
@@ -88,6 +95,7 @@ function WeOffer() {
         {weOfferData.map((item) => (
           <div
             key={item.id}
+            onClick={() => router.push(item.path)}
             className="card relative overflow-hidden flex flex-row items-center md:items-center gap-8 px-2 py-6 rounded-[12px] border border-[#b6c9f1]/70 bg-[hsla(0,0%,100%,0.25)] shadow-[0_14px_24px_0_rgba(90,46,184,0.15)] backdrop-blur-md transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] group"
           >
             {/* Left: Image */}
