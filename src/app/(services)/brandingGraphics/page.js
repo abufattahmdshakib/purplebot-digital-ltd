@@ -2,6 +2,7 @@
 import React from 'react'
 import Branding from '../../../../Component/Services/BrandingGraphics/Branding';
 import LogoandBrand from '../../../../Component/Services/BrandingGraphics/LogoandBrand';
+import PrintMaterial from '../../../../Component/Services/BrandingGraphics/PrintMaterial';
 
 function BrandingGraphics() {
   return (
@@ -12,6 +13,7 @@ function BrandingGraphics() {
             <div className=' pt-12 relative z-0'>
               <Branding />
               <LogoandBrand />
+              <PrintMaterial />
             </div>
           </div>
         </div>

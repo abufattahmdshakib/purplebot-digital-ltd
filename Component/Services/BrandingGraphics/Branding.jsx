@@ -27,7 +27,7 @@ function Branding() {
             </div>
 
             {/* NEW ANIMATED TEXT SECTION */}
-            <div className="my-16 text-center px-2">
+            <div className="mt-16 text-center px-2">
                 <p className="text-xl sm:text-3xl font-semibold text-purple-700 animate-bounce">
                    [ This page is under construction... Coming soon! ]
                    

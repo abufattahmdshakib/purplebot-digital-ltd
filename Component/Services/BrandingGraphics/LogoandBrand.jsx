@@ -6,7 +6,7 @@ const LogoandBrand = () => {
     const features = [
         "Brand Identity & Visual Guideline Development",
         "Logo Design",
-        "Stationery Design (Visiting Card, Letterhead, Envelope, etc.)",
+        "Stationery Design (Letterhead, Envelope, etc.)",
     ];
 
     const digitalCards = [
@@ -37,7 +37,7 @@ const LogoandBrand = () => {
                             We work with you to create a unique identity for your brand, so you can <strong>cut through the clutter</strong> and stand out, both on digital and traditional media.
                         </p>
 
-                        <p className="text-[16px] sm:text-[20px] font-[400] text-black mb-3">
+                        <p className="text-[16px] sm:text-[20px] font-[400] text-black mb-6">
                             Your logo, your colors and your overall brand presence will set you apart from competition and inspire your audience. Whether you need a complete brand overhaul or new elements out of an existing system, we are here to transform your vision into reality.
                         </p>
 
@@ -56,20 +56,20 @@ const LogoandBrand = () => {
                             alt="Main Character"
                             width={900}
                             height={900}
-                            className="object-contain mx-auto max-w-[450px] sm:max-w-[700px]"
+                            className="object-contain mx-auto max-w-[400px] sm:max-w-[700px]"
                         />
                     </div>
                 </div>
             </div>
             {/* FEATURES AS ICON CARDS */}
-            <div className="w-[500px] sm:w-[720px] mx-auto sm:mx-0 sm:pl-6 mt-4 sm:-mt-50">
+            <div className="w-[500px] sm:w-[720px] mx-auto sm:mx-0 sm:pl-6 mt-4 sm:-mt-38">
                 {digitalCards.map((card, i) => (
                     <div
                         key={i}
                         className="inline-flex m-2"
                     >
                         <div
-                            className=" flex sm:w-full w-40 justify-between  mx-auto items-center gap-4 bg-white px-3 py-2 sm:px-4 h-20 sm:h-18 rounded-full shadow-sm border border-[#e8d4f1]"
+                            className=" flex sm:w-full w-40 justify-between  mx-auto items-center gap-2 sm:gap-4 bg-white px-2 py-2 sm:px-4 h-22 sm:h-18 rounded-full shadow-sm border border-[#e8d4f1]"
                         >
                             {/* ICON */}
                             <div className="sm:w-8 w-7 h-7 sm:h-8 mx-auto relative flex-shrink-0">
