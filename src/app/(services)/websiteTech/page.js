@@ -4,6 +4,7 @@ import React from 'react'
 import WebsiteTechBanner from '../../../../Component/Services/WebsiteTechBanner/WebsiteTechBanner';
 import UiUxDesign from '../../../../Component/Services/WebsiteTechBanner/UiUxDesign';
 import CustomTech from '../../../../Component/Services/WebsiteTechBanner/CustomTech';
+import Website from '../../../../Component/Services/WebsiteTechBanner/Website';
 
 function WebsiteTech() {
     return (
@@ -14,6 +15,7 @@ function WebsiteTech() {
                         <div className=' pt-12 relative z-0 overflow-x-hidden'>
                             <WebsiteTechBanner />
                             <UiUxDesign />
+                            <Website />
                             <CustomTech />
                         </div>
                     </div>

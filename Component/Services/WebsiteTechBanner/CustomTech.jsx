@@ -73,7 +73,7 @@ const CustomTech = () => {
                         className="inline-flex m-2"
                     >
                         <div
-                            className=" flex sm:w-full w-42 justify-between  mx-auto items-center gap-1 sm:gap-4 bg-white px-2 py-1 sm:px-4 h-22 sm:h-18 rounded-full shadow-sm border border-[#e8d4f1]"
+                            className=" flex sm:w-full w-40 justify-between  mx-auto items-center gap-1 sm:gap-4 bg-white px-2 py-1 sm:px-4 h-22 sm:h-18 rounded-full shadow-sm border border-[#e8d4f1]"
                         >
                             {/* ICON */}
                             <div className="sm:w-8 w-7 h-7 sm:h-8 mx-auto relative flex-shrink-0">
@@ -91,6 +91,14 @@ const CustomTech = () => {
                     </div>
 
                 ))}
+            </div>
+            <div className="text-center mt-12 sm:mt-24">
+                <h1 className="text-[28px] sm:text-[38px] text-black font-[400]">
+                    Check out some of our work related to
+                </h1>
+                <h1 className="text-[36px] sm:text-[48px] font-[900] text-transparent bg-clip-text bg-gradient-to-l from-[#851b67] to-[#c81a7a]">
+                    Website and Tech
+                </h1>
             </div>
         </section >
     );
