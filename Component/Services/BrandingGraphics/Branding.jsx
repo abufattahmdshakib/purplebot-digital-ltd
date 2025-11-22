@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Branding() {
     return (
-        <section className="w-full my-8 sm:my-20">
+        <section className="w-full mx-auto my-8 sm:my-20 px-2">
             <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between px-2 sm:px-8">
                 {/* LEFT SIDE TEXT */}
                 <div className="text-center sm:text-left mt-6 sm:mt-0">
