@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function VideoEditingbanner() {
     return (
-        <section className="w-full">
+        <section className="w-full mx-auto my-6 sm:my-8 px-2">
             <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between px-2 sm:px-8">
                 {/* LEFT SIDE TEXT */}
                 <div className="text-center sm:text-left mt-6 sm:mt-0">
@@ -24,14 +24,6 @@ function VideoEditingbanner() {
                         className="object-contain mx-auto max-w-[370px] sm:max-w-[600px]"
                     />
                 </div>
-            </div>
-
-            {/* NEW ANIMATED TEXT SECTION */}
-            <div className="my-16 text-center px-2">
-                <p className="text-xl sm:text-3xl font-semibold text-purple-700 animate-bounce">
-                    [ This page is under construction... Coming soon! ]
-
-                </p>
             </div>
         </section>
     )
