@@ -89,9 +89,9 @@ const Packaging = () => {
 
                 ))}
             </div>
-            <div className="text-center mt-12 sm:mt-20">
+            <div className="text-center mt-10 sm:mt-20">
                 <h1 className="text-[36px] sm:text-[48px] font-[900] text-transparent bg-clip-text bg-gradient-to-l from-[#851b67] to-[#c81a7a]">Visuals speak volumes.</h1>
-                <h1 className="text-[28px] sm:text-[38px] text-black font-[400]">Explore some of our <span className="text-[36px] sm:text-[48px] font-[900] text-transparent bg-clip-text bg-gradient-to-l from-[#851b67] to-[#c81a7a]">best designs</span> below.</h1>
+                <h1 className="text-[28px] sm:text-[38px] text-black font-[400]">Explore some of our <span className="font-[800] text-transparent bg-clip-text bg-gradient-to-l from-[#851b67] to-[#c81a7a]">best designs</span> below.</h1>
             </div>
         </section >
     );
