@@ -8,11 +8,11 @@ import Website from '../../../../Component/Services/WebsiteTechBanner/Website';
 
 function WebsiteTech() {
     return (
-        <div className="container mx-auto bg-gradient-to-r from-[#ccafdda9] via-[#fff] to-[#fff]">
+        <div className="bg-gradient-to-r from-[#ccafdda9] via-[#fff] to-[#fff]">
             <div className='pt-4 sm:pt-6'>
                 <div className="flex flex-col justify-between">
                     <div className='flex-1'>
-                        <div className=' pt-12 relative z-0 overflow-x-hidden'>
+                        <div className='container mx-auto pt-12 relative z-0 overflow-x-hidden'>
                             <WebsiteTechBanner />
                             <UiUxDesign />
                             <Website />

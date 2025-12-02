@@ -64,7 +64,7 @@ const Territories = () => {
           alt="Exploration Hero"
           width={650}
           height={650}
-          className="object-contain max-w-[400px] sm:max-w-[700px] -mb-14 pb-12 sm:pb-0 z-40"
+          className="object-contain  -mb-14 pb-12 sm:pb-0 z-40"
         />
       </div>
     </section>

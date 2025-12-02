@@ -2,7 +2,7 @@ import React from "react";
 
 function Philosophy() {
   return (
-    <div className="sm:px-0 px-2 sm:pb-0 pb-10">
+    <div className="sm:px-0 px-2 container mx-auto sm:pb-0 pb-10">
       <div
         className="bg-cover bg-center bg-no-repeat text-white p-3 sm:p-6"
         style={{ backgroundImage: "url('/assist/Philosophy-bg.png')" }}

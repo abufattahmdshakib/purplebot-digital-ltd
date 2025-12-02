@@ -2,9 +2,9 @@ import React from "react";
 
 function Experience() {
     return (
-        <section className="relative ">
+        <section className="relative">
             {/* Container */}
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-4 sm:px-0 px-2">
+            <div className="container mx-auto flex flex-col md:flex-row items-start justify-between gap-4 sm:px-0 px-2">
 
                 {/* Left Side */}
                 <div className="md:w-3/8 flex flex-col items-start justify-start pl-4 sm:pl-18 mt-0 sm:mt-16 mb-5 sm:mb-0">
@@ -42,7 +42,7 @@ function Experience() {
                 <img
                     src="/assist/runner-3s-long 1.svg"
                     alt="Runner"
-                    className="w-full max-w-7xl object-contain z-[10]"
+                    className="w-full  object-contain z-[10]"
                 />
             </div>
         </section>

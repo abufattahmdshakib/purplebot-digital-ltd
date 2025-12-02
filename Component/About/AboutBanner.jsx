@@ -8,7 +8,7 @@ const AboutBanner = () => {
         <section>
             <section className="px-2 md:px-8 pb-18 sm:pb-0 pt-18 md:pt-26 mt-0 relative -top-16 z-10 bg-gradient-to-r from-[#ccafdd] via-[#fff] to-[#fff] overflow-hidden">
                 {/* Shape Wrapper */}
-                <div className="shape-wrapper relative flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
+                <div className="shape-wrapper relative container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-2">
 
                     {/* Background Shape */}
                     <div className="shape absolute inset-0 z-0 pointer-events-none"></div>
@@ -79,9 +79,10 @@ const AboutBanner = () => {
                 </div>
             </section>
 
-            <div className="relative max-w-7xl -mt-18 pt-26 overflow-hidden">
+            <div className="relative -mt-18 pt-26 overflow-hidden">
                 {/* Gradient background that stops halfway down */}
-                <div className="absolute inset-0 h-[80vh] bg-gradient-to-r from-[#ccafdd] via-[#fff] to-[#fff] pointer-events-none"></div>
+                <div className="absolute inset-0 h-[80vh] bg-gradient-to-r from-[#ccafdd] via-[#fff] to-[#fff] pointer-events-none">    
+                </div>
                 <Territories />
             </div>
 

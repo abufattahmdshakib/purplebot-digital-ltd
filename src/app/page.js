@@ -9,7 +9,7 @@ import ServicePackages from "../../Component/Home/ServicePackages";
 
 function Home() {
   return (
-    <div className="container mx-auto">
+    <div>
 
       {/* Main Content */}
       <div className="pt-24 md:pt-18">

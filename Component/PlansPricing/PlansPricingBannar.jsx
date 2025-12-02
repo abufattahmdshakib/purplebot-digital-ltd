@@ -88,7 +88,7 @@ export default function PlansPricingBanner() {
   const headerHeight = "h-40"; // header height
 
   return (
-    <section className="bg-gradient-to-l from-[#ECB9D6] via-[#FFF] to-[#CCAFDD]">
+    <section className="container mx-auto">
       <div className="leading-18 sm:leading-15 py-10 sm:py-16">
         <h1 className="text-center text-[38px] sm:text-[48px] font-[700] sm:font-[800] px-1 text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67]">
           Fixed Packages

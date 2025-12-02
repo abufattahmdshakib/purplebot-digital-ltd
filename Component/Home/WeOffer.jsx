@@ -74,12 +74,12 @@ function WeOffer() {
   }, []);
 
   return (
-    <section className="py-12 md:py-2 px-2 md:px-10"
+    <section className=" py-12 md:py-2 px-2 md:px-10"
       style={bgStyle}
     >
 
       {/* Section Title */}
-      <div className="text-center mb-5 md:mb-12">
+      <div className="container mx-auto text-center mb-5 md:mb-12">
         <h1 className="text-3xl md:text-5xl font-bold text-[#C81A7A] mt-0 md:mt-18 mb-2 md:mb-8">
           Services We Offer
         </h1>
@@ -91,7 +91,7 @@ function WeOffer() {
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8  service-cards mt-2 md:mt-16 py-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8  service-cards mt-2 md:mt-16 py-4">
         {weOfferData.map((item) => (
           <div
             key={item.id}

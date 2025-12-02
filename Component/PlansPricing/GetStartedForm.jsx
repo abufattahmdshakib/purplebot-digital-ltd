@@ -34,7 +34,7 @@ export default function GetStartedForm() {
     };
 
     return (
-        <section className="flex items-center justify-center px-2 sm:px-4 py-12">
+        <section className="flex items-center bg-gradient-to-l from-[#ECB9D6] via-[#FFF] to-[#CCAFDD] justify-center px-2 sm:px-4 py-12">
             <div className="w-full max-w-6xl bg-[#FFFFFF33] backdrop-blur-2xl rounded-3xl shadow-sm border border-[#ed88bf] p-2 sm:p-8">
                 <h2 className="text-[38px] sm:text-[64px] font-[700] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#C81A7A] to-[#851B67] pt-12 mb-2">
                     Get Started

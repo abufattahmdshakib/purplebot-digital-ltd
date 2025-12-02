@@ -56,7 +56,7 @@ function OurWork() {
     const duplicateSequence = generateSequence(projectItems);
 
     return (
-        <div className=" relative py-4 bg-[#fdfdfd]">
+        <div className="container mx-auto relative py-4 bg-[#fdfdfd]">
             <div className="overflow-hidden relative max-w-full mx-auto">
                 <motion.div
                     ref={marqueeRef}

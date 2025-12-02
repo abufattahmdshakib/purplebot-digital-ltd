@@ -2,7 +2,7 @@ import React from "react";
 
 function MemberTeam() {
     return (
-        <div className="relative text-center pb-10 pt-[280px] overflow-hidden group z-0">
+        <div className="relative container mx-auto text-center pb-10 pt-[280px] overflow-hidden group z-0">
             {/* Cloud Images */}
             <img
                 src="/assist/cloud-1.webp"

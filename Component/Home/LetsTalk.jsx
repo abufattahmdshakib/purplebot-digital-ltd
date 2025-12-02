@@ -16,7 +16,7 @@ function LetsTalk() {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-2 md:px-0 flex flex-col md:flex-row items-center justify-between gap-6 bg-white pt-4 mb-8">
+    <section className="container mx-auto px-2 md:px-6 flex flex-col md:flex-row items-center justify-between gap-6 bg-white pt-4 mb-8">
 
       {/* Left: Contact Info */}
       <div className="flex-1 text-left">

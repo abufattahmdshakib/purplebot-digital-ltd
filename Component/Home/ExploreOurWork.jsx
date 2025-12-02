@@ -34,9 +34,9 @@ function ExploreOurWork() {
     ];
 
     return (
-        <div>
+        <div className="container mx-auto">
             {/* Button & Title Section */}
-            <div className="flex flex-col items-center text-center space-y-4 py-9 md:py-18">
+            <div className=" flex flex-col items-center text-center space-y-4 py-9 md:py-18">
                 <button onClick={() => router.push("/ourWork")} className="relative text-[18px] text-center md:text-[22px] inline-flex items-center justify-center gap-2 h-12 md:h-14 px-8 rounded-[50px] bg-gradient-to-r from-[#A72793] to-[#8136AE] shadow-[0_4px_4px_rgba(0,0,0,0.25)] text-white font-semibold transition-all duration-300 group hover:bg-gradient-to-l hover:from-[#A72793] hover:to-[#8136AE] hover:shadow-2xl cursor-pointer">
                     <span className="flex items-center gap-2 transform transition-transform duration-700 translate-x-4 group-hover:-translate-x-3">
                         Explore Our Work

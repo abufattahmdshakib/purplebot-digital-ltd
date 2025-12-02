@@ -36,7 +36,7 @@ function WhyChoose() {
     return (
         <section className='bg-gradient-to-t from-[#851B67] to-[#C81A7A] py-10 md:py-20'>
             {/* section one */}
-            <section className="flex flex-col md:flex-row items-center mb-5">
+            <section className="container mx-auto  flex flex-col md:flex-row items-center mb-5">
                 {/* Left Content */}
                 <div className="w-full md:w-3/5 mx-auto  pl-0 md:pl-22 mb-6 md:mb-0">
                     <div className="flex-1 text-center md:text-left">
@@ -81,7 +81,7 @@ function WhyChoose() {
             </section>
 
             {/* section two */}
-            <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-0 px-3 md:px-8">
+            <section className="container mx-auto  grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-0 px-3 md:px-8">
                 {chooseData.map((item, index) => (
                     <div
                         key={item.id}

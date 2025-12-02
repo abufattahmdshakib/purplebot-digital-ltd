@@ -2,7 +2,7 @@ import React from 'react'
 
 function Achievements() {
     return (
-        <div className=' block -mt-40 md:mt-8'>
+        <div className='container mx-auto block -mt-40 md:mt-8'>
             <div className='flex justify-between items-center px-10 md:px-40'>
                 <div className='block md:flex items-center gap-3 md:gap-5'>
                     <h1

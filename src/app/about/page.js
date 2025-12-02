@@ -41,10 +41,10 @@ function About() {
 
     return (
 
-        <div className="container mx-auto">
+        <div>
             <div className='pt-24 md:pt-18'>
                 <div className="flex flex-col justify-between">
-                    <div className='flex-1'>
+                    <div className=' flex-1'>
                         <AboutBanner />
                         <Experience />
                         <div style={bgStyle} className=' pt-12 relative z-0'>

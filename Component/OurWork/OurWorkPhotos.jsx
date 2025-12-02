@@ -14,7 +14,7 @@ function OurWorkPhotos() {
             : projects.filter((item) => item.category === activeFilter);
 
     return (
-        <div className="mb-6 sm:mb-10 px-2">
+        <div className="mb-6 container mx-auto sm:mb-10 px-2">
             {/* Heading */}
             <h1 className="text-[68px] sm:text-[82px] font-[700] mt-5 sm:mt-16 text-center text-transparent bg-clip-text bg-gradient-to-t from-[#851B67] to-[#C81A7A] ">Our Work</h1>
 

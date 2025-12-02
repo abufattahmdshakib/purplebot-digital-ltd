@@ -43,7 +43,7 @@ const BannerPage = () => {
       }}
     >
       {/* Rest of your content */}
-      <section className="relative z-10 flex flex-col md:flex-row items-center justify-between px-2 md:px-4 pt-4 gap-6">
+      <section className="container mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between px-2 md:px-4 pt-4 gap-6">
         {/* Left Side */}
         <div className="flex-[1] md:flex-[0.9] text-center md:text-left space-y-3 md:space-y-4 -mt-4 md:-mt-24 md:pl-18">
           <h1
