@@ -10,7 +10,6 @@ import ServicePackages from "../../Component/Home/ServicePackages";
 function Home() {
   return (
     <div>
-
       {/* Main Content */}
       <div className="pt-24 md:pt-18">
         {/* Your page content goes here */}
@@ -24,7 +23,6 @@ function Home() {
             <WeOffer />
             <ServicePackages />
           </div>
-
         </div>
       </div>
     </div>
